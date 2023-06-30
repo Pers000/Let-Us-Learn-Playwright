@@ -1,0 +1,11 @@
+//Notes:
+//"npx playwright test" is used to run the test configured in the cofig file
+
+
+//"npx playwright codegen" will trigger a recorder with a browser opened
+
+To open the last HTML report run
+npx playwright show-report
+
+Auto waiting
+https://playwright.dev/docs/actionability
