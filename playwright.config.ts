@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
   //accepts single or can run multiple file 
   testMatch: ["tests/basicInterActions.test.ts"],
   use: {
-    headless: false,
+    //headless: false,
     screenshot: "on",
     video: "on"
   },
