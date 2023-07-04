@@ -1,4 +1,5 @@
- import{expect, test} from "@playwright/test";
+import{expect, test} from "@playwright/test";
+import moment from "moment";
 
  test("Interaction with inputs", async ({page}) => {
     await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo")
@@ -21,7 +22,7 @@
 
     let num1 = 12;
     let num2 = 13;
-    
+   
     //this validation can be skipped. You can go directly to entering value
     console.log(await sum1.getAttribute("placeholder"))
     expect(sum1).toHaveAttribute("placeholder", "Please enter first value")

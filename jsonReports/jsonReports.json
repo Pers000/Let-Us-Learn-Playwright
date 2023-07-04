@@ -1,0 +1,125 @@
+{
+  "config": {
+    "configFile": "z:\\VSCode-Test Folders\\Playwright\\Practice I\\playwright.config.ts",
+    "rootDir": "z:/VSCode-Test Folders/Playwright/Practice I",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "totalTime": 20885.35799999535
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReports.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "z:/VSCode-Test Folders/Playwright/Practice I/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "z:/VSCode-Test Folders/Playwright/Practice I",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.35.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\calendar.test.ts",
+      "file": "tests/calendar.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Calendar using moments",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 19524,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "This :true\n"
+                    },
+                    {
+                      "text": "This :true\n"
+                    },
+                    {
+                      "text": "This :true\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-07-04T17:56:54.457Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "z:\\VSCode-Test Folders\\Playwright\\Practice I\\test-results\\tests-calendar-Calendar-using-moments\\video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "z:\\VSCode-Test Folders\\Playwright\\Practice I\\test-results\\tests-calendar-Calendar-using-moments\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "68c95afee124c9066c67-248dfd9bc48497f4557e",
+          "file": "tests/calendar.test.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
