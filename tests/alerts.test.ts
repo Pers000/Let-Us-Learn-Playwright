@@ -24,10 +24,10 @@ test ("Handling Alerts 2", async ({page}) => {
         console.log(defaultValue)
         await alert.dismiss()
      })
+     await page.waitForTimeout(5000)
     //Other ways to locate an element that has multiple duplicate
     const JSAlert = page.locator("button:has-text('Click Me')").nth(1).click()
-    await page.waitForTimeout(2000)
-    expect(page.locator("id=confirm-demo")).toContainText("Cancel")
+    await expect(page.locator("id=confirm-demo")).toContainText("Cancel")
 })
 
 test ("Handling Alerts 3", async ({page}) => {
@@ -42,7 +42,7 @@ test ("Handling Alerts 3", async ({page}) => {
     const promptMessage = page.locator("id=prompt-demo")
     await promptMessage.scrollIntoViewIfNeeded()
     const JSAlert = page.locator("button:has-text('Click Me')").nth(2).click()
-    expect(promptMessage).toContainText("'Monster'")
+    await expect(promptMessage).toContainText("'Monster'")
 })
 
 test ("Handling Bootstrap modal", async ({page}) => {

@@ -2,9 +2,9 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
   //accepts single or can run multiple file 
-  testMatch: ["tests/*.test.ts"],
+  testMatch: ["tests/login.test.ts"],
   use: {
-    headless: false,
+    headless: true,
     screenshot: "on",
     video: "on",
     launchOptions: {slowMo: 1000}
